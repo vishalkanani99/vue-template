@@ -143,7 +143,7 @@ const content = [
             <div class="flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-start">
               <div class="flex flex-col items-center pr-0 md:pr-4 pb-4 md:pb-0">
                 <div class="w-28 h-28 border p-1 rounded-full shadow-md">
-                  <img class="w-full h-full rounded-full" src="/public/images/group-shopping-2.jpg" />
+                  <img class="w-full h-full rounded-full" :src="publicPath('images',  'group-shopping-2.jpg')" />
                 </div>
               </div>
               <div class="flex flex-wrap flex-row justify-center md:justify-start">
@@ -166,7 +166,7 @@ const content = [
             <div class="flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-start">
               <div class="flex flex-col items-center pr-0 md:pr-4 pb-4 md:pb-0">
                 <div class="w-28 h-28 border p-1 rounded-full shadow-md">
-                  <img class="w-full h-full rounded-full" src="/public/images/group-shopping-2.jpg" />
+                  <img class="w-full h-full rounded-full" :src="publicPath('images',  'group-shopping-2.jpg')" />
                 </div>
               </div>
               <div class="flex flex-wrap flex-row justify-center md:justify-start">

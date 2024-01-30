@@ -19,7 +19,7 @@ import { mdiListBox, mdiDownload } from '@mdi/js';
         title="Product 1" 
         subTitle="5 months ago"
         note="Purchased on sale"
-        imageSrc="/public/images/baby.jpg"
+        :imageSrc="publicPath('images',  'baby.jpg')"
         status="Delivered"
         statusColor="success" 
         >
@@ -32,7 +32,7 @@ import { mdiListBox, mdiDownload } from '@mdi/js';
         title="Product 2" 
         subTitle="5 months ago"
         note="You have retured twice"
-        imageSrc="/public/images/shopping-3.jpg"
+        :imageSrc="publicPath('images',  'shopping-3.jpg')"
         status="Shipped"
         statusColor="info" 
         >
@@ -45,7 +45,7 @@ import { mdiListBox, mdiDownload } from '@mdi/js';
         title="Product 3" 
         subTitle="5 months ago"
         note="You have exceed maximum attempt"
-        imageSrc="/public/images/shopping-2.jpg"
+        :imageSrc="publicPath('images',  'shopping-2.jpg')"
         status="Failed to delivered"
         statusColor="danger" 
         >
@@ -57,7 +57,7 @@ import { mdiListBox, mdiDownload } from '@mdi/js';
       <OverviewCard 
         title="Product 4" 
         subTitle="5 months ago"
-        imageSrc="/public/images/shopping.jpg"
+        :imageSrc="publicPath('images',  'shopping.jpg')"
         note="You have exceed maximum attempt"
         status="Canceled"
         statusColor="warning" 
