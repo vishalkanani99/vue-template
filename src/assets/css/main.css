@@ -1,0 +1,133 @@
+@import '@/assets/css/_table.css';
+
+@tailwind base;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Prompt;
+        src: url('@/assets/fonts/Prompt-Regular.ttf');
+    }
+
+    * {
+        font-family: 'Prompt', sans-serif;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        @apply font-semibold;
+    }
+
+    h1 {
+        @apply text-3xl md:text-4xl;
+    }
+
+    h2 {
+        @apply text-2xl md:text-3xl;
+    }
+
+    h3 {
+        @apply text-xl md:text-2xl;
+    }
+
+    h4 {
+        @apply text-lg md:text-xl;
+    }
+
+    h5 {
+        @apply text-base md:text-xl;
+    }
+
+    h6 {
+        @apply md:text-sm md:text-base;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        @apply w-1 h-1;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        @apply bg-stone-100;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        @apply bg-stone-500 rounded-full;
+    }
+}
+
+@layer utilities {
+
+    .bg-dark {
+        @apply bg-stone-600 text-white;
+    }
+
+    .bg-light {
+        @apply bg-stone-100 text-stone-600;
+    }
+
+    .theme-hover {
+        @apply hover:bg-stone-500 hover:text-white;
+    }
+
+    .theme-btn {
+        @apply bg-dark theme-hover focus:ring-stone-300 border border-stone-200 shadow-lg hover:shadow-xl;
+    }
+
+    .wrapper-flex {
+        @apply flex items-center space-x-2;
+    }
+
+    .wrapper-flex-center {
+        @apply wrapper-flex justify-center;
+    }
+
+    .wrapper-flex-start {
+        @apply wrapper-flex justify-start;
+    }
+
+    .wrapper-flex-end {
+        @apply wrapper-flex justify-end;
+    }
+
+    .wrapper-flex-between {
+        @apply wrapper-flex justify-between;
+    }
+
+    .wrapper-padding {
+        @apply p-4 md:p-8;
+    }
+
+    .wrapper-margin {
+        @apply m-4 md:m-8;
+    }
+
+    .wrapper-space-y {
+        @apply space-y-4;
+    }
+
+    .bg-gradient {
+        @apply bg-gradient-to-r from-stone-600 via-stone-500 to-stone-400;
+    }
+
+    .bg-gradient-reverse {
+        @apply bg-gradient-to-r from-stone-400 via-stone-500 to-stone-600;
+    }
+
+    .separator::before{
+        @apply absolute left-0 content-[''] bg-gradient top-[48%] h-2 w-1/5 lg:w-2/6;
+    }
+
+    .separator::after{
+        @apply absolute right-0 content-[''] bg-gradient-reverse top-[48%] h-2 w-1/5 lg:w-2/6;
+    }
+
+    .heading {
+        @apply relative flex flex-row justify-center items-center py-4 md:py-8 separator;
+    }
+
+    .heading h2{
+        @apply w-3/5 lg:w-2/6 text-center px-2;
+    }
+}
