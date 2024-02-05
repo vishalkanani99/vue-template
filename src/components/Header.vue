@@ -1,7 +1,13 @@
 <script setup>
+import routes from '@/routes'
 
 const showLeftSideBar = shallowRef(false);
 const showModal = shallowRef(false);
+
+routes.beforeEach((to, from) => {
+  showLeftSideBar.value = false;
+  showModal.value = false;
+})
 </script>
 <template>
   <div>
