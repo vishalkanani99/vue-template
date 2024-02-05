@@ -12,7 +12,7 @@ const props = defineProps({
   },
   height: {
     type: [String, Array],
-    default: 'h-screen',
+    default: 'h-dvh',
   },
   width: [String, Array],
   position: [String, Array],
@@ -61,7 +61,7 @@ const closeModal = (type = 'overlayer') => {
 <template>
   <div
     :class="transformClasses" 
-    class="fixed flex flex-col z-[90] max-h-dvh justify-center items-center inset-0 overflow-hidden transition-all">
+    class="fixed flex flex-col z-[90] justify-center items-center inset-0 overflow-hidden transition-all">
       <div 
         :class="['absolute inset-0 bg-light opacity-80', { 'cursor-pointer': !immortal }]" 
         @click="closeModal()">
