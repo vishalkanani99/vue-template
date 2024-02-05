@@ -65,7 +65,7 @@ const closeSideBar = () => {
         toggleBaseClasses,
         compact ? 'w-28 xs:w-32' : 'w-52 xs:w-72'
       ]" 
-      class="flex items-center fixed inset-y-0 z-[100] max-w-full transition-all px-2 md:px-4">
+      class="flex items-center fixed inset-y-0 z-[100] max-h-dvh max-w-full transition-all px-2 md:px-4">
       <div 
         :class="[
           'flex flex-col h-screen py-2 md:py-4',
