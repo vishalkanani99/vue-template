@@ -20,7 +20,6 @@ export function useSwiperEvent() {
   })
 
   const dragging = useThrottle((e) => {
-    e.preventDefault();
     let pageX = e?.pageX || ( e?.touches?.length && e.touches[0]?.pageX);
     if(!isDragStarted.value || !pageX) {
       draggedPosition.value = 0;
