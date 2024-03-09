@@ -26,6 +26,7 @@ export function useSwiperEvent() {
       stopDragging();
       return;
     }
+    e.preventDefault();
     isDragging.value = true;
     draggedPosition.value = pageX - position.value;
     setStyle('auto', 'grabbing');
