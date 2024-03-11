@@ -1,10 +1,10 @@
 export function useEvent() {
-  const addEvent = ( target, event, callback ) => {
-    target.addEventListener(event, callback);
+  const addEvent = ( target, event, callback, options = {} ) => {
+    target.addEventListener(event, callback, options);
   }
   
-  const romoveEvent = ( target, event, callback ) => {
-    target.removeEventListener(event, callback);
+  const romoveEvent = ( target, event, callback, options = {} ) => {
+    target.removeEventListener(event, callback, options);
   }
   
   return { addEvent, romoveEvent };

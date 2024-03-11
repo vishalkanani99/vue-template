@@ -84,6 +84,7 @@ declare global {
   const useSlots: typeof import('vue')['useSlots']
   const useSnackbar: typeof import('./composables/useSnackbar.js')['useSnackbar']
   const useSnackbarMessages: typeof import('./composables/useSnackbar.js')['useSnackbarMessages']
+  const useSwiper: typeof import('./composables/useSwiper.js')['useSwiper']
   const useSwiperEvent: typeof import('./composables/useSwiperEvent.js')['useSwiperEvent']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
@@ -176,7 +177,7 @@ declare module 'vue' {
     readonly useRouter: UnwrapRef<typeof import('vue-router/auto')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSnackbar: UnwrapRef<typeof import('./composables/useSnackbar.js')['useSnackbar']>
-    readonly useSwiperEvent: UnwrapRef<typeof import('./composables/useSwiperEvent.js')['useSwiperEvent']>
+    readonly useSwiper: UnwrapRef<typeof import('./composables/useSwiper.js')['useSwiper']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>
@@ -261,7 +262,7 @@ declare module '@vue/runtime-core' {
     readonly useRouter: UnwrapRef<typeof import('vue-router/auto')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSnackbar: UnwrapRef<typeof import('./composables/useSnackbar.js')['useSnackbar']>
-    readonly useSwiperEvent: UnwrapRef<typeof import('./composables/useSwiperEvent.js')['useSwiperEvent']>
+    readonly useSwiper: UnwrapRef<typeof import('./composables/useSwiper.js')['useSwiper']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>

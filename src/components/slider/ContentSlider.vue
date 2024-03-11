@@ -15,7 +15,7 @@ const props = defineProps({
 });
 
 let slideInterval;
-const { addSwiperEvents, romoveSwiperEvents } = useSwiperEvent();
+const { initSwiper, clearSwiper } = useSwiper();
 const contentRefs = ref([]);
 const containerRef = ref();
 
@@ -90,12 +90,12 @@ const autoSlideShow = () => {
 
 onMounted(() => {
   initSlider();
-  addSwiperEvents(containerRef.value, dragging, stopDragging);
+  initSwiper(containerRef.value, dragging, stopDragging);
 })
 
 onUnmounted(() =>{
   clearSlideInterval();
-  romoveSwiperEvents(containerRef.value);
+  clearSwiper(containerRef.value);
 })
 </script>
 <template>
